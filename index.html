@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Snail Animation (Visual Only)</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: transparent;
+    }
+
+    #snail {
+      position: absolute;
+      bottom: 0;
+      left: 100%;
+      width: 150px;
+      animation: moveSnail 20s linear infinite;
+    }
+
+    @keyframes moveSnail {
+      0% { left: 100%; }
+      100% { left: -150px; }
+    }
+  </style>
+</head>
+<body>
+  <img id="snail" src="snail.png" alt="Snail" />
+</body>
+</html>
